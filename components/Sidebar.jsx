@@ -8,10 +8,10 @@ import { FiSettings } from 'react-icons/fi';
 const Sidebar = ({ children }) => {
   return (
     <div className='flex'>
-      <div className='fixed w-20 h-screen p-4  border-r-[1px] flex flex-col justify-between'>
+      <div className='hidden fixed w-20 h-screen p-4 border-r-[1px] sm:flex flex-col justify-between'>
         <div className='flex flex-col items-center'>
           <Link href='/'>
-            <div className='  p-3 rounded-lg inline-block'>
+            <div className='p-3 rounded-lg inline-block'>
               <RxSketchLogo size={20} />
             </div>
           </Link>
@@ -38,7 +38,7 @@ const Sidebar = ({ children }) => {
           </Link>
         </div>
       </div>
-      <main className='ml-20 w-full'>{children}</main>
+      <main className='sm:ml-20 w-full'>{children}</main>
     </div>
   );
 };
