@@ -16,7 +16,7 @@ const Sidebar = ({ children }) => {
             </div>
           </Link>
           <span className='border-b-[1px] border-gray-500 w-full p-2'></span>
-          <Link href='/'>
+          <Link href='/dashboard'>
             <div className=' hover:bg-gray-500 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <RxDashboard size={20} />
             </div>
