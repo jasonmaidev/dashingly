@@ -4,7 +4,7 @@ import { Providers } from '@/components/providers';
 
 export default function App({ Component, pageProps }) {
   return (
-    <Providers>
+    <Providers >
       <Sidebar>
         <Component {...pageProps} />
       </Sidebar>

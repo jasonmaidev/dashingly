@@ -1,3 +1,16 @@
+const currentDateString = (() => {
+  let date = new Date();
+  return () => {
+    date = new Date(date.getTime() - 24 * 60 * 60 * 1000); // add 1 day
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  };
+})();
+
+
+const randomNumber = () => {
+  return Math.round(Math.random() * 9999 * 100) / 100;
+};
+
 export const data = [
   {
     id: 1,
@@ -5,21 +18,19 @@ export const data = [
       first: 'John',
       last: 'Smith',
     },
-    total: 2795.95,
+    total: randomNumber(),
     status: 'On Hold',
     method: 'PayPal',
-    date: '15 Minutes ago',
-  },
-  {
+    date: currentDateString(),
     id: 2,
     name: {
       first: 'Chris',
       last: 'Adams',
     },
-    total: 1195.95,
+    total: randomNumber(),
     status: 'Processing',
     method: 'PayPal',
-    date: '23 Minutes ago',
+    date: currentDateString(),
   },
   {
     id: 3,
@@ -27,10 +38,10 @@ export const data = [
       first: 'Sarah',
       last: 'Smith',
     },
-    total: 495.85,
+    total: randomNumber(),
     status: 'Completed',
     method: 'Visa',
-    date: '1 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 4,
@@ -38,10 +49,10 @@ export const data = [
       first: 'Joseph',
       last: 'Choo',
     },
-    total: 150.45,
+    total: randomNumber(),
     status: 'Processing',
     method: 'MasterCard',
-    date: '1 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 5,
@@ -49,10 +60,10 @@ export const data = [
       first: 'Steve',
       last: 'Harding',
     },
-    total: 175.25,
+    total: randomNumber(),
     status: 'On Hold',
     method: 'PayPal',
-    date: '2 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 6,
@@ -60,10 +71,10 @@ export const data = [
       first: 'Laura',
       last: 'Croft',
     },
-    total: 1295.75,
+    total: randomNumber(),
     status: 'Completed',
     method: 'Check',
-    date: '3 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 7,
@@ -71,10 +82,10 @@ export const data = [
       first: 'Michael',
       last: 'Jones',
     },
-    total: 89.95,
+    total: randomNumber(),
     status: 'Completed',
     method: 'MasterCard',
-    date: '3 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 8,
@@ -82,10 +93,10 @@ export const data = [
       first: 'James',
       last: 'Bond',
     },
-    total: 689.45,
+    total: randomNumber(),
     status: 'Completed',
     method: 'Visa',
-    date: '7 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 9,
@@ -93,10 +104,10 @@ export const data = [
       first: 'Haley',
       last: 'Whiting',
     },
-    total: 14.99,
+    total: randomNumber(),
     status: 'Completed',
     method: 'PayPal',
-    date: '1 Day ago',
+    date: currentDateString(),
   },
   {
     id: 10,
@@ -104,10 +115,10 @@ export const data = [
       first: 'Tim',
       last: 'Thomas',
     },
-    total: 218.99,
+    total: randomNumber(),
     status: 'Completed',
     method: 'MasterCard',
-    date: '1 Day ago',
+    date: currentDateString(),
   },
   {
     id: 11,
@@ -115,10 +126,10 @@ export const data = [
       first: 'John',
       last: 'Smith',
     },
-    total: 2795.95,
+    total: randomNumber(),
     status: 'On Hold',
     method: 'PayPal',
-    date: '15 Minutes ago',
+    date: currentDateString(),
   },
   {
     id: 12,
@@ -126,10 +137,10 @@ export const data = [
       first: 'Chris',
       last: 'Adams',
     },
-    total: 1195.95,
+    total: randomNumber(),
     status: 'Processing',
     method: 'PayPal',
-    date: '23 Minutes ago',
+    date: currentDateString(),
   },
   {
     id: 13,
@@ -137,10 +148,10 @@ export const data = [
       first: 'Sarah',
       last: 'Smith',
     },
-    total: 495.85,
+    total: randomNumber(),
     status: 'Completed',
     method: 'Visa',
-    date: '1 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 14,
@@ -148,10 +159,10 @@ export const data = [
       first: 'Joseph',
       last: 'Choo',
     },
-    total: 150.45,
+    total: randomNumber(),
     status: 'Processing',
     method: 'MasterCard',
-    date: '1 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 15,
@@ -159,10 +170,10 @@ export const data = [
       first: 'Steve',
       last: 'Harding',
     },
-    total: 175.25,
+    total: randomNumber(),
     status: 'On Hold',
     method: 'PayPal',
-    date: '2 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 16,
@@ -170,10 +181,10 @@ export const data = [
       first: 'Laura',
       last: 'Croft',
     },
-    total: 1295.75,
+    total: randomNumber(),
     status: 'Completed',
     method: 'Check',
-    date: '3 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 17,
@@ -181,10 +192,10 @@ export const data = [
       first: 'Michael',
       last: 'Jones',
     },
-    total: 89.95,
+    total: randomNumber(),
     status: 'Completed',
     method: 'MasterCard',
-    date: '3 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 18,
@@ -192,10 +203,10 @@ export const data = [
       first: 'James',
       last: 'Bond',
     },
-    total: 689.45,
+    total: randomNumber(),
     status: 'Completed',
     method: 'Visa',
-    date: '7 Hour ago',
+    date: currentDateString(),
   },
   {
     id: 19,
@@ -203,10 +214,10 @@ export const data = [
       first: 'Haley',
       last: 'Whiting',
     },
-    total: 14.99,
+    total: randomNumber(),
     status: 'Completed',
     method: 'PayPal',
-    date: '1 Day ago',
+    date: currentDateString(),
   },
   {
     id: 20,
@@ -214,9 +225,9 @@ export const data = [
       first: 'Tim',
       last: 'Thomas',
     },
-    total: 218.99,
+    total: randomNumber(),
     status: 'Completed',
     method: 'MasterCard',
-    date: '1 Day ago',
+    date: currentDateString(),
   },
 ];
