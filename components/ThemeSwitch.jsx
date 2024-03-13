@@ -22,11 +22,11 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <FiSun className=" hover:cursor-pointer" onClick={() => setTheme('light')} />
+    return <FiSun size={24} className=" hover:cursor-pointer" onClick={() => setTheme('light')} />
   }
 
   if (resolvedTheme === 'light') {
-    return <FiMoon className=" hover:cursor-pointer" onClick={() => setTheme('dark')} />
+    return <FiMoon size={24} className=" hover:cursor-pointer" onClick={() => setTheme('dark')} />
   }
 
 }

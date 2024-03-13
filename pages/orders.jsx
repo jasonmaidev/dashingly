@@ -20,14 +20,14 @@ const orders = () => {
             {data.map((order, id) => (
               <li
                 key={id}
-                className=' hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
+                className='hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-gray-500 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
               >
                 <div className='flex'>
                   <div className='bg-purple-100 p-3 rounded-lg'>
                     <FaShoppingBag className='text-purple-800' />
                   </div>
                   <div className='pl-4'>
-                    <p className=' font-bold'>
+                    <p className=' font-bold' suppressHydrationWarning>
                       ${order.total.toLocaleString()}
                     </p>
                     <p className=' text-sm'>{order.name.first}</p>
@@ -46,7 +46,7 @@ const orders = () => {
                     {order.status}
                   </span>
                 </p>
-                <p className='hidden md:flex'>{order.date}</p>
+                <p className='hidden md:flex' suppressHydrationWarning>{order.date}</p>
                 <div className='sm:flex hidden justify-between items-center'>
                   <p>{order.method}</p>
                   <BsThreeDotsVertical />

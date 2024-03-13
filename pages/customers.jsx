@@ -17,7 +17,7 @@ const customers = () => {
           </div>
           <ul>
             {data.map((order, id) => (
-              <li key={id} className=' hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
+              <li key={id} className=' hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-gray-500 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
                 <div className='flex items-center'>
                   <div className='bg-purple-100 p-3 rounded-lg'>
                     <BsPersonFill className='text-purple-800' />

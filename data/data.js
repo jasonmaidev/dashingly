@@ -6,7 +6,6 @@ const currentDateString = (() => {
   };
 })();
 
-
 const randomNumber = () => {
   return Math.round(Math.random() * 9999 * 100) / 100;
 };

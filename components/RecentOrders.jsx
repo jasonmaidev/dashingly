@@ -7,10 +7,10 @@ const RecentOrders = () => {
     <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg  overflow-y-scroll no-scrollbar'>
       <h1>Recent Orders</h1>
       <ul>
-        {data.map((order, id) => (
+        {data?.map((order, id) => (
           <li
             key={id}
-            className=' hover:bg-gray-500 rounded-lg my-3 p-2 flex items-center cursor-pointer'
+            className='hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-gray-500 rounded-lg my-3 p-2 flex items-center cursor-pointer'
           >
             <div className='bg-purple-100 rounded-lg p-3'>
               <FaShoppingBag className='text-purple-800' />
