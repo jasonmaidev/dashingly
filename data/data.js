@@ -7,7 +7,7 @@ const currentDateString = (() => {
 })();
 
 const randomNumber = () => {
-  return 1000 + Math.floor(Math.random() * (3000 - 1000 + 1));
+  return 10000 + Math.floor(Math.random() * (100000 - 10000 + 1));
 };
 
 export const data = [
@@ -81,7 +81,40 @@ export const data = [
     id: 7,
     name: {
       first: 'Michael',
-      last: 'Jones',
+      last: 'Lam',
+    },
+    total: randomNumber(),
+    status: 'Completed',
+    method: 'MasterCard',
+    date: currentDateString(),
+  },
+  {
+    id: 8,
+    name: {
+      first: 'James',
+      last: 'Thomas',
+    },
+    total: randomNumber(),
+    status: 'Completed',
+    method: 'MasterCard',
+    date: currentDateString(),
+  },
+  {
+    id: 9,
+    name: {
+      first: 'Tracy',
+      last: 'Goldman',
+    },
+    total: randomNumber(),
+    status: 'Completed',
+    method: 'MasterCard',
+    date: currentDateString(),
+  },
+  {
+    id: 10,
+    name: {
+      first: 'Sam',
+      last: 'Carter',
     },
     total: randomNumber(),
     status: 'Completed',

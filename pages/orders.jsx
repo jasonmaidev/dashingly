@@ -4,13 +4,18 @@ import { BsThreeDotsVertical } from 'react-icons/bs';
 import Header from '@/components/Header.jsx';
 import { useDataContext } from '@/context/dataContext';
 
-const orders = () => {
+const orders = ({ handleRemove }) => {
   const data = useDataContext()
+  console.log(data)
   return (
     <div className=' min-h-screen'>
       <Header pageType='Orders' />
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg  overflow-y-auto'>
+          <div className='flex flex-row gap-2 justify-center'>
+            <button className='bg-gray-300 px-4 py-2 rounded-xl'>+</button>
+            <button onClick={handleRemove} className='bg-gray-300 px-4 py-2 rounded-xl'>-</button>
+          </div>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
             <span>Order</span>
             <span className='sm:text-left text-right'>Status</span>

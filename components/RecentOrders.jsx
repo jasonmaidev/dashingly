@@ -1,10 +1,14 @@
 import { useDataContext } from '@/context/dataContext';
 import { FaShoppingBag } from 'react-icons/fa';
+import { useState } from 'react';
 const RecentOrders = () => {
   const data = useDataContext()
+
   return (
     <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg  overflow-y-scroll no-scrollbar'>
-      <h1>Recent Orders</h1>
+      <div className='flex justify-between items-center'>
+        <h1>Recent Orders</h1>
+      </div>
       <ul>
         {data.map((order, id) => (
           <li
