@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { useDataContext } from '@/context/dataContext';
 
 ChartJS.register(
   CategoryScale,
@@ -20,6 +21,8 @@ ChartJS.register(
 );
 
 const BarChart = () => {
+  const data = useDataContext()
+
   const [chartData, setChartData] = useState({
     datasets: [],
   });
@@ -28,12 +31,13 @@ const BarChart = () => {
 
   useEffect(() => {
     setChartData({
-      labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
+      labels: data.map((order) => order.date),
       datasets: [
         {
           label: 'Sales $',
-          data: [18127, 22201, 19490, 17938, 24182, 17842, 22475],
+          data: data.map((order) => order.total),
           borderColor: 'rgb(53, 162, 235)',
+          borderWidth: 4,
           backgroundColor: 'rgb(53, 162, 235, 0.4',
           borderRadius: 16,
           borderSkipped: false,

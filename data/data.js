@@ -2,12 +2,12 @@ const currentDateString = (() => {
   let date = new Date();
   return () => {
     date = new Date(date.getTime() - 24 * 60 * 60 * 1000); // add 1 day
-    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   };
 })();
 
 const randomNumber = () => {
-  return Math.round(Math.random() * 9999 * 100) / 100;
+  return 1000 + Math.floor(Math.random() * (3000 - 1000 + 1));
 };
 
 export const data = [
@@ -15,20 +15,22 @@ export const data = [
     id: 1,
     name: {
       first: 'John',
-      last: 'Smith',
+      last: 'Ashen',
     },
     total: randomNumber(),
-    status: 'On Hold',
-    method: 'PayPal',
+    status: 'Completed',
+    method: 'Visa',
     date: currentDateString(),
+  },
+  {
     id: 2,
     name: {
-      first: 'Chris',
-      last: 'Adams',
+      first: 'Greg',
+      last: 'Omara',
     },
     total: randomNumber(),
-    status: 'Processing',
-    method: 'PayPal',
+    status: 'Completed',
+    method: 'Visa',
     date: currentDateString(),
   },
   {

@@ -1,10 +1,11 @@
 import React from 'react';
 import { FaShoppingBag } from 'react-icons/fa';
 import { BsThreeDotsVertical } from 'react-icons/bs';
-import { data } from '../data/data.js';
 import Header from '@/components/Header.jsx';
+import { useDataContext } from '@/context/dataContext';
 
 const orders = () => {
+  const data = useDataContext()
   return (
     <div className=' min-h-screen'>
       <Header pageType='Orders' />
