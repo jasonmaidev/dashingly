@@ -99,26 +99,26 @@ export const data = [
     method: 'MasterCard',
     date: currentDateString(),
   },
-  {
-    id: 9,
-    name: {
-      first: 'Tracy',
-      last: 'Goldman',
-    },
-    total: randomNumber(),
-    status: 'Completed',
-    method: 'MasterCard',
-    date: currentDateString(),
-  },
-  {
-    id: 10,
-    name: {
-      first: 'Sam',
-      last: 'Carter',
-    },
-    total: randomNumber(),
-    status: 'Completed',
-    method: 'MasterCard',
-    date: currentDateString(),
-  },
+  // {
+  //   id: 9,
+  //   name: {
+  //     first: 'Tracy',
+  //     last: 'Goldman',
+  //   },
+  //   total: randomNumber(),
+  //   status: 'Completed',
+  //   method: 'MasterCard',
+  //   date: currentDateString(),
+  // },
+  // {
+  //   id: 10,
+  //   name: {
+  //     first: 'Sam',
+  //     last: 'Carter',
+  //   },
+  //   total: randomNumber(),
+  //   status: 'Completed',
+  //   method: 'MasterCard',
+  //   date: currentDateString(),
+  // },
 ];
