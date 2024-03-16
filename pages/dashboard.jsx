@@ -10,7 +10,7 @@ const dashboard = () => {
     <main className='min-h-screen'>
       <Header pageType='Overview' />
       <TopCards />
-      <div className='p-4 grid md:grid-cols-3 grid-cols-1 gap-4'>
+      <div className='p-4 grid md:grid-cols-5 grid-cols-1 gap-4'>
         <BarChart />
         <LineChart />
         <RecentOrders />

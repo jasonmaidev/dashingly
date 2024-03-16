@@ -32,7 +32,7 @@ const orders = ({ handleRemove }) => {
         </button>
       </div>
       <div className='p-8'>
-        <div className='w-full m-auto px-12 py-4 rounded-3xl  overflow-y-auto shadow-2xl'>
+        <div className='w-full m-auto px-4 md:px-12 py-4 rounded-3xl  overflow-y-auto shadow-2xl'>
           <div className='my-3 py-2 px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
             <span className='font-bold'>Order</span>
             <span className='sm:text-left text-right font-bold'>Status</span>
@@ -52,8 +52,8 @@ const orders = ({ handleRemove }) => {
                   key={id}
                   className={
                     resolvedTheme === 'light' ?
-                      'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-gradient-to-r from-cyan-100 to-pink-100 rounded-xl my-3 py-2 px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
-                      : 'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-slate-700 rounded-xl my-3 py-2 px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
+                      'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-gradient-to-r from-cyan-100 to-pink-100 rounded-xl my-3 py-2 md:px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
+                      : 'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-slate-700 rounded-xl my-3 py-2 md:px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
                   }
                 >
                   <div className='flex'>

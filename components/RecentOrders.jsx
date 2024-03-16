@@ -5,7 +5,7 @@ const RecentOrders = () => {
   const data = useDataContext()
 
   return (
-    <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg  overflow-y-scroll no-scrollbar'>
+    <div className='w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg  overflow-y-scroll no-scrollbar'>
       <div className='flex justify-between items-center'>
         <h1>Recent Orders</h1>
       </div>
