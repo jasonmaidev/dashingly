@@ -88,17 +88,17 @@ export const data = [
     method: 'MasterCard',
     date: currentDateString(),
   },
-  {
-    id: 8,
-    name: {
-      first: 'James',
-      last: 'Thomas',
-    },
-    total: randomNumber(),
-    status: 'Completed',
-    method: 'MasterCard',
-    date: currentDateString(),
-  },
+  // {
+  //   id: 8,
+  //   name: {
+  //     first: 'James',
+  //     last: 'Thomas',
+  //   },
+  //   total: randomNumber(),
+  //   status: 'Completed',
+  //   method: 'MasterCard',
+  //   date: currentDateString(),
+  // },
   // {
   //   id: 9,
   //   name: {

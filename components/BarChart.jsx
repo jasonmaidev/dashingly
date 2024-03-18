@@ -36,9 +36,9 @@ const BarChart = () => {
         {
           label: 'Sales $',
           data: data.map((order) => order.total),
-          borderColor: 'rgb(53, 162, 235)',
-          borderWidth: 4,
-          backgroundColor: 'rgb(53, 162, 235, 0.4)',
+          borderColor: 'rgb(84, 255, 232)',
+          borderWidth: 2,
+          backgroundColor: 'rgb(84, 255, 232, 0.3)',
           borderRadius: 16,
           borderSkipped: false,
         },
@@ -61,7 +61,7 @@ const BarChart = () => {
 
   return (
     <>
-      <div className='w-full md:col-span-5 lg:col-span-5 xl:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg '>
+      <div className='w-full md:col-span-5 lg:col-span-3 xl:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-12 shadow-xl rounded-3xl'>
         <Bar data={chartData} options={chartOptions} />
       </div>
     </>

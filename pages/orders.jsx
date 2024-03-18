@@ -13,7 +13,7 @@ const orders = ({ handleRemove }) => {
   return (
     <div className={
       resolvedTheme === 'light' ?
-        'min-h-screen bg-slate-50'
+        'min-h-screen bg-slate-50 text-slate-800'
         :
         'min-h-screen bg-slate-800'
     }>
@@ -22,7 +22,7 @@ const orders = ({ handleRemove }) => {
       <div className='flex flex-row gap-2 justify-center'>
         <button
           onClick={handleRemove}
-          className='bg-cyan-400/40 hover:bg-cyan-300 border-2 border-cyan-300 p-4 rounded-2xl text-xl'>
+          className='bg-teal-400/40 hover:bg-teal-300 border-2 border-teal-300 p-4 rounded-2xl text-xl'>
           <FiPlus />
         </button>
         <button
@@ -32,7 +32,12 @@ const orders = ({ handleRemove }) => {
         </button>
       </div>
       <div className='p-8'>
-        <div className='w-full m-auto px-4 md:px-12 py-4 rounded-3xl  overflow-y-auto shadow-2xl'>
+        <div className={
+          resolvedTheme === 'light' ?
+            'w-full m-auto px-4 md:px-12 py-4 rounded-3xl overflow-y-auto shadow-2xl'
+            : 'w-full m-auto px-4 md:px-12 py-4 rounded-3xl overflow-y-auto shadow-[0_35px_30px_-15px_rgba(0,0,0,0.3)]'
+        }
+        >
           <div className='my-3 py-2 px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
             <span className='font-bold'>Order</span>
             <span className='sm:text-left text-right font-bold'>Status</span>
@@ -60,7 +65,7 @@ const orders = ({ handleRemove }) => {
                     <div className='p-3 rounded-xl'>
                       <FaShoppingBag
                         className={
-                          resolvedTheme === 'light' ? 'text-cyan-400' : 'text-slate-500'
+                          resolvedTheme === 'light' ? 'text-teal-400' : 'text-slate-500'
                         }
                       />
                     </div>
@@ -75,13 +80,12 @@ const orders = ({ handleRemove }) => {
                     <span
                       className={
                         order.status == 'Processing' ?
-                          'bg-cyan-500/20  border-2 border-cyan-300 py-2 px-4 rounded-xl text-sm'
+                          'bg-teal-500/20  border-2 border-teal-300 py-2 px-4 rounded-xl text-sm'
                           : order.status == 'Completed' ?
-                            '  border-2 border-slate-600/10 py-2 px-4 rounded-xl text-sm'
+                            '  border-2 border-slate-500/30 py-2 px-4 rounded-xl text-sm'
                             : 'bg-pink-500/20 border-2 border-pink-300 py-2 px-4 rounded-xl text-sm'
                       }
                     >
-
                       {order.status}
                     </span>
                   </p>

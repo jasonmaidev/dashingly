@@ -38,11 +38,11 @@ const LineChart = () => {
         {
           label: 'Sales $',
           data: data.map((order) => order.total),
-          borderColor: 'rgb(53, 162, 235)',
-          backgroundColor: 'rgb(53, 162, 235',
+          borderColor: 'rgb(7, 217, 189)',
+          backgroundColor: 'rgb(7, 217, 189)',
           borderRadius: 16,
           borderSkipped: false,
-          borderWidth: 8,
+          borderWidth: 6,
           pointRadius: 4,
           tension: 0.3
         },
@@ -69,7 +69,7 @@ const LineChart = () => {
   }, [])
 
   return (
-    <div className='w-full md:col-span-5 lg:col-span-3 xl:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg'>
+    <div className='w-full md:col-span-5 lg:col-span-3 xl:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-12 shadow-xl rounded-3xl'>
       <Line data={chartData} options={chartOptions} />
     </div>
   )

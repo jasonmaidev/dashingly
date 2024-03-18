@@ -11,10 +11,10 @@ const Sidebar = ({ children }) => {
     <div className='flex'>
       <div
         className={
-          resolvedTheme === 'dark' ?
-            'hidden fixed w-20 h-screen p-4 border-r-[1px] border-gray-500 sm:flex flex-col justify-between'
+          resolvedTheme === 'light' ?
+            'hidden fixed w-20 h-screen p-4 border-r-[1px] sm:flex flex-col justify-between text-slate-800'
             :
-            'hidden fixed w-20 h-screen p-4 border-r-[1px] sm:flex flex-col justify-between'
+            'hidden fixed w-20 h-screen p-4 bg-slate-800 border-r-[1px] border-slate-900 sm:flex flex-col justify-between'
         }
       >
         <div className='flex flex-col items-center'>
@@ -25,17 +25,17 @@ const Sidebar = ({ children }) => {
           </Link>
           <span className='border-b-[1px] border-gray-500 w-full p-2'></span>
           <Link href='/dashboard'>
-            <div className=' hover:bg-gray-500 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <div className='hover:bg-slate-500/30 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <RxDashboard size={20} />
             </div>
           </Link>
           <Link href='/orders'>
-            <div className=' hover:bg-gray-500 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <div className='hover:bg-slate-500/30 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <HiOutlineShoppingBag size={20} />
             </div>
           </Link>
           <Link href='#'>
-            <div className='b hover:bg-gray-500 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <div className='hover:bg-slate-500/30 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <FiSettings size={20} />
             </div>
           </Link>
