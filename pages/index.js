@@ -33,7 +33,6 @@ export default function Home() {
               bg-clip-text 
               bg-gradient-to-br from-emerald-200 via-teal-400 to-fuchsia-500
               hover:text-transparent 
-              hover:bg-gradient-to-bl from-emerald-200 via-teal-400 to-fuchsia-500
               '>
                 Dashingly
               </span>
