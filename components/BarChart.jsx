@@ -51,7 +51,8 @@ const BarChart = () => {
         },
         title: {
           display: true,
-          text: 'Daily Revenue'
+          text: 'Daily Revenue',
+          color: '#f472b6'
         }
       },
       maintainAspectRatio: false,

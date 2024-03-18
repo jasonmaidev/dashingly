@@ -31,9 +31,9 @@ export default function Home() {
               sm:inline 
               text-transparent 
               bg-clip-text 
-              bg-gradient-to-br from-teal-400 to-fuchsia-500
+              bg-gradient-to-br from-emerald-200 via-cyan-500 to-fuchsia-500
               hover:text-transparent 
-              hover:bg-gradient-to-bl from-teal-400 to-fuchsia-500
+              hover:bg-gradient-to-bl from-emerald-200 via-cyan-500 to-fuchsia-500
               '>
                 Dashingly
               </span>
@@ -56,8 +56,8 @@ export default function Home() {
                 <a href="#_" class="relative inline-flex items-center justify-center px-12 py-8 overflow-hidden font-bold rounded-3xl shadow-2xl group">
                   <span class={
                     resolvedTheme === 'light' ?
-                      "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-fuchsia-600 via-purple-400 to-blue-300 group-hover:opacity-100"
-                      : "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"
+                      "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-fuchsia-500 via-cyan-300 to-emerald-200 group-hover:opacity-100"
+                      : "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-fuchsia-600 via-purple-700 to-blue-400 group-hover:opacity-100"
                   }
                   >
                   </span>

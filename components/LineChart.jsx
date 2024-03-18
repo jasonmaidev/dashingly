@@ -55,6 +55,7 @@ const LineChart = () => {
         },
         title: {
           display: true,
+          color: '#f472b6',
           text: 'Daily Revenue'
         }
       },
