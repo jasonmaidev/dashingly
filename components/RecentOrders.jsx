@@ -13,7 +13,7 @@ const RecentOrders = () => {
         : 'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border border-slate-900 rounded-3xl overflow-y-scroll no-scrollbar'
     }
     >
-      <div className='flex justify-between items-center'>
+      <div className='flex justify-between items-center p-2'>
         <h1>Recent Orders</h1>
       </div>
       <ul>

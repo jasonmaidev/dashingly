@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <div className={
           resolvedTheme === 'light' ?
-            'min-h-screen flex flex-col align-middle items-center justify-between mx-auto text-center p-8 text-slate-800'
+            'min-h-screen flex flex-col align-middle items-center justify-between mx-auto text-center p-8 text-slate-700'
             : 'min-h-screen flex flex-col align-middle items-center justify-between mx-auto text-center p-8 bg-slate-800'
         }
         >
@@ -31,9 +31,9 @@ export default function Home() {
               sm:inline 
               text-transparent 
               bg-clip-text 
-              bg-gradient-to-br from-emerald-200 via-cyan-500 to-fuchsia-500
+              bg-gradient-to-br from-emerald-200 via-teal-400 to-fuchsia-500
               hover:text-transparent 
-              hover:bg-gradient-to-bl from-emerald-200 via-cyan-500 to-fuchsia-500
+              hover:bg-gradient-to-bl from-emerald-200 via-teal-400 to-fuchsia-500
               '>
                 Dashingly
               </span>

@@ -36,7 +36,7 @@ const BarChart = () => {
         {
           label: 'Sales $',
           data: data.map((order) => order.total),
-          borderColor: 'rgb(84, 255, 232)',
+          borderColor: 'rgb(7, 217, 189)',
           borderWidth: 2,
           backgroundColor: 'rgb(84, 255, 232, 0.3)',
           borderRadius: 16,
