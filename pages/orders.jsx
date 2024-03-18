@@ -5,11 +5,12 @@ import Header from '@/components/Header.jsx';
 import { useDataContext } from '@/context/dataContext';
 import { useTheme } from 'next-themes'
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { insertData } from '@/data/data';
 
-const orders = ({ handleRemove }) => {
+const orders = ({ handleRemove, handleAdd }) => {
   const { resolvedTheme } = useTheme();
   const data = useDataContext()
-  console.log(data)
+
   return (
     <div className={
       resolvedTheme === 'light' ?
@@ -21,7 +22,7 @@ const orders = ({ handleRemove }) => {
       {/* Buttons */}
       <div className='flex flex-row gap-2 justify-center'>
         <button
-          onClick={handleRemove}
+          onClick={handleAdd}
           className='bg-teal-400/40 hover:bg-teal-300 border-2 border-teal-300 p-4 rounded-2xl text-xl'>
           <FiPlus />
         </button>
