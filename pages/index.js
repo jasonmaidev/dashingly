@@ -39,38 +39,34 @@ export default function Home() {
               Elegant.
             </p>
             <Link href='/dashboard'>
-              <button>
-                <a href="#_" class="relative inline-flex items-center justify-center px-12 py-8 overflow-hidden font-bold rounded-3xl shadow-2xl group">
-                  <span class={
-                    resolvedTheme === 'light' ?
-                      "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-fuchsia-500 via-cyan-300 to-emerald-200 group-hover:opacity-100"
-                      : "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-fuchsia-600 via-purple-700 to-blue-400 group-hover:opacity-100"
-                  }
-                  >
-                  </span>
-                  {/* <!-- Top glass gradient --> */}
-                  <span class="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
-                  {/* <!-- Bottom gradient --> */}
-                  <span class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
-                  {/* <!-- Left gradient --> */}
-                  <span class="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
-                  {/* <!-- Right gradient --> */}
-                  <span class="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
-                  <span class="absolute inset-0 w-full h-full border border-white rounded-3xl opacity-10"></span>
-                  <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
-                  <span class="relative">See Dashboard</span>
-                </a>
+              {/* <div className="relative inline-flex items-center justify-center px-12 py-8 overflow-hidden font-bold rounded-3xl shadow-2xl group"> */}
+              <button className="relative inline-flex items-center justify-center px-12 py-8 overflow-hidden font-bold rounded-3xl shadow-2xl group">
+                <span className={
+                  resolvedTheme === 'light' ?
+                    "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-fuchsia-500 via-cyan-300 to-emerald-200 group-hover:opacity-100"
+                    : "absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-fuchsia-600 via-purple-700 to-blue-400 group-hover:opacity-100"
+                }
+                >
+                </span>
+                <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+                <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+                <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+                <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+                <span className="absolute inset-0 w-full h-full border border-white rounded-3xl opacity-10"></span>
+                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+                <span className="relative">See Dashboard</span>
               </button>
+              {/* </div> */}
             </Link>
           </div>
 
           <div className='flex flex-row justify-center gap-2'>
-            <h4 className='text-xs sm:text-sm'>Built with 💛 by</h4>
-            <button className='text-xs sm:text-sm'>
-              <a href="https://jasonmai.dev" target='_blank'>
+            <h4 className='text-xs sm:text-sm font-medium'>Built with 💛 by</h4>
+            <a href="https://jasonmai.dev" target='_blank'>
+              <button className='text-xs sm:text-sm font-medium'>
                 JasonMai.dev
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
 
         </div >

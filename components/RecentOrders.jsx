@@ -1,6 +1,5 @@
 import { useDataContext } from '@/context/dataContext';
-import { FaShoppingBag } from 'react-icons/fa';
-import { useState } from 'react';
+import { HiShoppingBag } from "react-icons/hi";
 import { useTheme } from 'next-themes'
 const RecentOrders = () => {
   const data = useDataContext()
@@ -27,7 +26,7 @@ const RecentOrders = () => {
             }
           >
             <div className='flex'>
-              <FaShoppingBag className={
+              <HiShoppingBag className={
                 resolvedTheme === 'light' ? 'text-teal-400' : 'text-slate-500'
               } />
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaShoppingBag } from 'react-icons/fa';
+import { HiShoppingBag } from "react-icons/hi";
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import Header from '@/components/Header.jsx';
 import { useDataContext } from '@/context/dataContext';
@@ -63,7 +63,7 @@ const orders = ({ handleRemove, handleAdd }) => {
                 >
                   <div className='flex'>
                     <div className='p-3 rounded-xl'>
-                      <FaShoppingBag
+                      <HiShoppingBag
                         className={
                           resolvedTheme === 'light' ? 'text-teal-400' : 'text-slate-500'
                         }
