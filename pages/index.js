@@ -40,18 +40,6 @@ export default function Home() {
               Elegant.
             </p>
             <Link href='/dashboard'>
-              {/* <button
-                className='
-               py-8
-               px-12 
-               hover:bg-slate-700 
-               rounded-3xl 
-               text-xs
-               sm:text-lg
-               shadow-[10px_25px_40px_-5px_rgba(0,0,0,0.3)]
-               '>
-                View Dashboard
-              </button> */}
               <button>
                 <a href="#_" class="relative inline-flex items-center justify-center px-12 py-8 overflow-hidden font-bold rounded-3xl shadow-2xl group">
                   <span class={
@@ -76,7 +64,15 @@ export default function Home() {
               </button>
             </Link>
           </div>
-          <h4 className='text-xs sm:text-sm '>Built with 💛 by JasonMai.dev</h4>
+
+          <div className='flex flex-row justify-center gap-2'>
+            <h4 className='text-xs sm:text-sm'>Built with 💛 by</h4>
+            <button className='text-xs sm:text-sm'>
+              <a href="https://jasonmai.dev" target='_blank'>
+                JasonMai.dev
+              </a>
+            </button>
+          </div>
 
         </div >
       </main >

@@ -5,7 +5,6 @@ import Header from '@/components/Header.jsx';
 import { useDataContext } from '@/context/dataContext';
 import { useTheme } from 'next-themes'
 import { FiPlus, FiMinus } from "react-icons/fi";
-import { insertData } from '@/data/data';
 
 const orders = ({ handleRemove, handleAdd }) => {
   const { resolvedTheme } = useTheme();
@@ -36,7 +35,7 @@ const orders = ({ handleRemove, handleAdd }) => {
         <div className={
           resolvedTheme === 'light' ?
             'w-full m-auto px-4 md:px-12 py-4 rounded-3xl overflow-y-auto shadow-2xl'
-            : 'w-full m-auto px-4 md:px-12 py-4 rounded-3xl overflow-y-auto shadow-[0_35px_30px_-15px_rgba(0,0,0,0.3)]'
+            : 'w-full m-auto px-4 md:px-12 py-4 rounded-3xl overflow-y-auto shadow-[0_20px_30px_-10px_rgba(0,0,0,0.3)]'
         }
         >
           <div className='my-3 py-2 px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
