@@ -1,12 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
-import { RxSketchLogo, RxDashboard } from 'react-icons/rx';
-import { HiOutlineShoppingBag } from 'react-icons/hi';
-import { FiSettings } from 'react-icons/fi';
+import { RxDashboard } from 'react-icons/rx';
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { RiHomeLine } from "react-icons/ri";
+import { IoReload } from "react-icons/io5";
 import { useTheme } from 'next-themes';
+import { useRouter } from 'next/router';
+
 
 const Sidebar = ({ children }) => {
+  const router = useRouter();
   const { resolvedTheme } = useTheme();
+
   return (
     <div className='flex'>
       <div
@@ -20,13 +25,13 @@ const Sidebar = ({ children }) => {
         <div className='flex flex-col items-center'>
           <Link href='/'>
             <div className='p-3 rounded-lg inline-block'>
-              <RxSketchLogo size={20} />
+              <RiHomeLine size={20} />
             </div>
           </Link>
           <span className='border-b-[1px] border-gray-500 w-full p-2'></span>
           <Link href='/dashboard'>
             <div className='hover:bg-slate-500/30 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <RxDashboard size={20} />
+              <RxDashboard data-tooltip-placement="right" size={20} />
             </div>
           </Link>
           <Link href='/orders'>
@@ -36,7 +41,7 @@ const Sidebar = ({ children }) => {
           </Link>
           <Link href='#'>
             <div className='hover:bg-slate-500/30 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <FiSettings size={20} />
+              <IoReload onClick={() => router.reload()} size={20} />
             </div>
           </Link>
         </div>
