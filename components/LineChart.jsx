@@ -70,7 +70,7 @@ const LineChart = () => {
   }, [])
 
   return (
-    <div className='w-full md:col-span-5 lg:col-span-3 xl:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-12 shadow-xl rounded-3xl'>
+    <div className='w-full md:col-span-5 lg:col-span-3 xl:col-span-2 relative h-[40vh] xl:h-[70vh] m-auto p-4 md:p-12 shadow-xl rounded-3xl'>
       <Line data={chartData} options={chartOptions} />
     </div>
   )

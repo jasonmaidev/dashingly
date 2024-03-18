@@ -19,7 +19,7 @@ const orders = ({ handleRemove, handleAdd }) => {
     }>
       <Header pageType='Orders' />
       {/* Buttons */}
-      <div className='flex flex-row gap-2 justify-center'>
+      <div className='flex flex-row gap-2 justify-center pt-8 xl:pt-2'>
         <button
           onClick={handleAdd}
           className='bg-teal-400/40 hover:bg-teal-300 border-2 border-teal-300 p-4 rounded-2xl text-xl'>

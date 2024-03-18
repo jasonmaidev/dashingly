@@ -9,8 +9,8 @@ const RecentOrders = () => {
   return (
     <div className={
       resolvedTheme === 'light' ?
-        'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-3xl overflow-y-scroll no-scrollbar'
-        : 'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border border-slate-900 rounded-3xl overflow-y-scroll no-scrollbar'
+        'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative h-[40vh] xl:h-[70vh] m-auto p-2 2xl:p-4 border rounded-3xl overflow-y-scroll no-scrollbar'
+        : 'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative h-[40vh] xl:h-[70vh] m-auto p-2 2xl:p-4 border border-slate-900 rounded-3xl overflow-y-scroll no-scrollbar'
     }
     >
       <div className='flex justify-between items-center p-2'>
@@ -31,7 +31,7 @@ const RecentOrders = () => {
                 resolvedTheme === 'light' ? 'text-teal-400' : 'text-slate-500'
               } />
             </div>
-            <div className='pl-4'>
+            <div className='pl-2 2xl:pl-4'>
               <p className=' font-bold' suppressHydrationWarning >${order.total}</p>
               <p className='text-slate-400 text-sm'>{order.name.first}</p>
             </div>

@@ -24,7 +24,7 @@ export default function Home() {
           <Header />
           <div>
             <p className='md:text-3xl pb-2'>Robust Data Synchronicity.</p>
-            <p className='md:text-8xl pb-8 font-medium'>
+            <p className='text-4xl md:text-6xl xl:text-8xl pb-8 font-medium'>
               <span className='
               pr-2
               block 
