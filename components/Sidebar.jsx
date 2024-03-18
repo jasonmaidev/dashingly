@@ -28,7 +28,12 @@ const Sidebar = ({ children }) => {
               <RiHomeLine size={20} />
             </div>
           </Link>
-          <span className='border-b-[1px] border-gray-500 w-full p-2'></span>
+          <span className={
+            resolvedTheme === 'light' ?
+              'border-b-[1px] w-full p-2'
+              : 'border-b-[1px] border-slate-900 w-full p-2'
+          }
+          ></span>
           <Link href='/dashboard'>
             <div className='hover:bg-slate-500/30 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <RxDashboard data-tooltip-placement="right" size={20} />
