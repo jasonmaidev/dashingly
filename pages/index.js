@@ -59,10 +59,9 @@ export default function Home() {
           </div>
 
           <div className='flex flex-row justify-center gap-2'>
-            <h4 className='text-xs sm:text-sm font-medium'>Built with 💛 by</h4>
             <a href="https://jasonmai.dev" target='_blank'>
               <button className='text-xs sm:text-sm font-medium'>
-                JasonMai.dev
+                Built with 💛 by JasonMai.dev
               </button>
             </a>
           </div>
