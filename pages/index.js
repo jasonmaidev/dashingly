@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
+import { RxDashboard } from 'react-icons/rx';
 
 import Header from '../components/Header';
 
@@ -53,7 +54,10 @@ export default function Home() {
                 <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
                 <span className="absolute inset-0 w-full h-full border border-white rounded-3xl opacity-10"></span>
                 <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
-                <span className="relative">See Dashboard</span>
+                <span className="relative flex flex-row items-center gap-2">
+                  <RxDashboard data-tooltip-placement="right" size={20} />
+                  See Dashboard
+                </span>
               </button>
             </Link>
           </div>
