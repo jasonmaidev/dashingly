@@ -39,7 +39,6 @@ export default function Home() {
               Elegant.
             </p>
             <Link href='/dashboard'>
-              {/* <div className="relative inline-flex items-center justify-center px-12 py-8 overflow-hidden font-bold rounded-3xl shadow-2xl group"> */}
               <button className="relative inline-flex items-center justify-center px-12 py-8 overflow-hidden font-bold rounded-3xl shadow-2xl group">
                 <span className={
                   resolvedTheme === 'light' ?
@@ -56,7 +55,6 @@ export default function Home() {
                 <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
                 <span className="relative">See Dashboard</span>
               </button>
-              {/* </div> */}
             </Link>
           </div>
 

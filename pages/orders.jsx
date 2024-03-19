@@ -57,8 +57,8 @@ const orders = ({ handleRemove, handleAdd }) => {
                   key={id}
                   className={
                     resolvedTheme === 'light' ?
-                      'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-gradient-to-r from-cyan-100 to-pink-100 rounded-xl my-3 py-2 md:px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
-                      : 'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-slate-700 rounded-xl my-3 py-2 md:px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
+                      'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-gradient-to-r from-cyan-100 to-pink-100 rounded-xl my-3 py-2 px-2 md:px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
+                      : 'hover:transition-all hover:ease-in-out hover:duration-300 hover:bg-slate-700 rounded-xl my-3 py-2 px-2 md:px-4 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
                   }
                 >
                   <div className='flex'>
@@ -69,7 +69,7 @@ const orders = ({ handleRemove, handleAdd }) => {
                         }
                       />
                     </div>
-                    <div className='pl-4'>
+                    <div className='md:pl-4'>
                       <p className=' font-bold' suppressHydrationWarning>
                         ${order.total.toLocaleString()}
                       </p>
