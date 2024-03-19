@@ -26,7 +26,7 @@ export default function ThemeSwitch() {
   }
 
   if (resolvedTheme === 'light') {
-    return <FiMoon size={24} className="text-slate-800 hover:cursor-pointer" onClick={() => setTheme('dark')} />
+    return <FiMoon size={24} className="text-teal-400 hover:cursor-pointer" onClick={() => setTheme('dark')} />
   }
 
 }
