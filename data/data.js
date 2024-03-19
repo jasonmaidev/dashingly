@@ -58,17 +58,6 @@ export const data = [
   {
     id: 5,
     name: {
-      first: 'Steve',
-      last: 'Harding',
-    },
-    total: randomNumber(),
-    status: 'Completed',
-    method: 'PayPal',
-    date: currentDateString(),
-  },
-  {
-    id: 6,
-    name: {
       first: 'Laura',
       last: 'Croft',
     },
@@ -78,7 +67,7 @@ export const data = [
     date: currentDateString(),
   },
   {
-    id: 7,
+    id: 6,
     name: {
       first: 'Michael',
       last: 'Lam',
