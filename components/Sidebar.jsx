@@ -19,7 +19,7 @@ const Sidebar = ({ children }) => {
           resolvedTheme === 'light' ?
             'hidden fixed w-20 h-screen p-4 border-r-[1px] sm:flex flex-col justify-between text-slate-800'
             :
-            'hidden fixed w-20 h-screen p-4 bg-slate-700 border-r-[1px] border-slate-900 sm:flex flex-col justify-between'
+            'hidden fixed w-20 h-screen p-4 bg-slate-800 border-r-[1px] border-slate-900 sm:flex flex-col justify-between'
         }
       >
         <div className='flex flex-col items-center'>

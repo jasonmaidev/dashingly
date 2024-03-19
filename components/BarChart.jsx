@@ -48,6 +48,9 @@ const BarChart = () => {
       plugins: {
         legend: {
           position: 'top',
+          labels: {
+            color: '#94a3b8'
+          }
         },
         title: {
           display: true,
@@ -57,6 +60,22 @@ const BarChart = () => {
       },
       maintainAspectRatio: false,
       responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            color: "#94a3b8",
+            beginAtZero: true
+          }
+        },
+        x: {
+          beginAtZero: true,
+          ticks: {
+            color: "#94a3b8",
+            beginAtZero: true
+          }
+        },
+      }
     })
   }, [])
 

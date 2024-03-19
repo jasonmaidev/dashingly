@@ -52,6 +52,9 @@ const LineChart = () => {
       plugins: {
         legend: {
           position: 'top',
+          labels: {
+            color: "#94a3b8"
+          }
         },
         title: {
           display: true,
@@ -63,8 +66,19 @@ const LineChart = () => {
       responsive: true,
       scales: {
         y: {
-          beginAtZero: true
-        }
+          beginAtZero: true,
+          ticks: {
+            color: "#94a3b8",
+            beginAtZero: true
+          }
+        },
+        x: {
+          beginAtZero: true,
+          ticks: {
+            color: "#94a3b8",
+            beginAtZero: true
+          }
+        },
       }
     })
   }, [])
