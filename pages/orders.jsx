@@ -15,7 +15,7 @@ const orders = ({ handleRemove, handleAdd }) => {
       resolvedTheme === 'light' ?
         'min-h-screen bg-slate-50 text-slate-800'
         :
-        'min-h-screen bg-slate-800'
+        'min-h-screen bg-slate-700'
     }>
       <Header pageType='Orders' />
       {/* Buttons */}
