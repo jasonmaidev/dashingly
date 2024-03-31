@@ -81,7 +81,7 @@ const Sidebar = ({ children }) => {
           <Link href='#'>
             <div className="p-10">
               <div className="group relative w-max">
-                <IoReload size={20} />
+                <IoReload size={20} onClick={() => router.reload()} />
                 <span
                   className={
                     resolvedTheme === 'light' ?
