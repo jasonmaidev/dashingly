@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { BsBarChartLine } from "react-icons/bs";
 
-
-
 const Header = ({ pageType }) => {
   return (
     <div className='flex flex-row justify-between px-4 pt-4 gap-4'>

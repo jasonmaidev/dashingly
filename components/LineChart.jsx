@@ -44,7 +44,7 @@ const LineChart = () => {
           borderSkipped: false,
           borderWidth: 6,
           pointRadius: 4,
-          tension: 0.3
+          tension: 0.4
         },
       ]
     })
