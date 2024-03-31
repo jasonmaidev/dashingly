@@ -2,7 +2,6 @@ import React from 'react'
 import ThemeSwitch from './ThemeSwitch'
 import Link from 'next/link';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { RiHomeLine } from "react-icons/ri";
 import { BsBarChartLine } from "react-icons/bs";
 
 

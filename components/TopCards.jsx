@@ -26,7 +26,7 @@ const TopCards = () => {
             >
                 <div className='flex flex-col w-full pb-4'>
                     <p className='text-xl md:text-2xl font-bold' suppressHydrationWarning>{dailyTotal}</p>
-                    <p className='text-slate-400'>Daily Revenue</p>
+                    <p className='text-slate-400'>Revenue</p>
                 </div>
                 <p className='bg-green-200 border-2 border-green-300 flex justify-center items-center px-4 py-2 rounded-2xl'>
                     <span className='text-green-700 text-lg'>+18%</span>
