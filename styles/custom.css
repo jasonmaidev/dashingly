@@ -1,0 +1,7 @@
+.custom-tooltip {
+  --tippy-color: #ff0000;
+  background-color: #f12929;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 16px;
+}

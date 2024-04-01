@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { RxDashboard } from 'react-icons/rx';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { RiHomeLine } from "react-icons/ri";
 import { IoReload } from "react-icons/io5";
 import { useTheme } from 'next-themes';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 
 const Sidebar = ({ children }) => {
+
   const router = useRouter();
   const { resolvedTheme } = useTheme();
 
