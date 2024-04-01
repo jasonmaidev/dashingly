@@ -6,8 +6,6 @@ import { RiHomeLine } from "react-icons/ri";
 import { IoReload } from "react-icons/io5";
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
-import ReactTooltip from 'react-tooltip';
-
 
 const Sidebar = ({ children }) => {
   const router = useRouter();
