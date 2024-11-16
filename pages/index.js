@@ -18,8 +18,8 @@ export default function Home() {
       <main>
         <div className={
           resolvedTheme === 'light' ?
-            'min-h-screen flex flex-col align-middle items-center justify-between mx-auto text-center p-8 text-slate-700'
-            : 'min-h-screen flex flex-col align-middle items-center justify-between mx-auto text-center p-8 bg-slate-800'
+            'min-h-screen flex flex-col align-middle items-center justify-between mx-auto text-center p-8 text-slate-700 bg-slate-50'
+            : 'min-h-screen flex flex-col align-middle items-center justify-between mx-auto text-center p-8 bg-slate-800 text-slate-50'
         }
         >
           <Header />

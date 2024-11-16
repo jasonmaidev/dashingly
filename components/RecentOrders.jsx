@@ -8,8 +8,8 @@ const RecentOrders = () => {
   return (
     <div className={
       resolvedTheme === 'light' ?
-        'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative h-[40vh] xl:h-[70vh] m-auto p-2 2xl:p-4 border rounded-3xl overflow-y-scroll no-scrollbar'
-        : 'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative h-[40vh] xl:h-[70vh] m-auto p-2 2xl:p-4 border border-slate-900 rounded-3xl overflow-y-scroll no-scrollbar'
+        'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative h-[40vh] xl:h-[70vh] m-auto p-2 2xl:p-4 border rounded-3xl overflow-y-scroll no-scrollbar text-slate-800 bg-slate-50'
+        : 'w-full col-span-1 md:col-span-5 lg:col-span-2 xl:col-span-1 relative h-[40vh] xl:h-[70vh] m-auto p-2 2xl:p-4 border border-slate-900 text-slate-50 rounded-3xl overflow-y-scroll no-scrollbar'
     }
     >
       <div className='flex justify-between items-center p-2'>

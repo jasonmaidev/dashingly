@@ -14,7 +14,7 @@ const dashboard = () => {
       resolvedTheme === 'light' ?
         'min-h-screen bg-slate-50 text-slate-800'
         :
-        'min-h-screen bg-slate-800'
+        'min-h-screen bg-slate-800 text-slate-50'
     }>
       <Header pageType='Overview' />
       <TopCards />

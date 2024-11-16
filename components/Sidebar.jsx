@@ -17,9 +17,9 @@ const Sidebar = ({ children }) => {
       <div
         className={
           resolvedTheme === 'light' ?
-            'hidden fixed w-20 h-screen p-4 border-r-[1px] sm:flex flex-col justify-between text-slate-800'
+            'hidden fixed w-20 h-screen p-4 border-r-[1px] sm:flex flex-col justify-between text-slate-800 bg-slate-50'
             :
-            'hidden fixed w-20 h-screen p-4 bg-slate-800 border-r-[1px] border-slate-900 sm:flex flex-col justify-between'
+            'hidden fixed w-20 h-screen p-4 bg-slate-800 border-r-[1px] border-slate-900 sm:flex flex-col justify-between text-slate-50'
         }
       >
         <div className='flex flex-col items-center'>
@@ -31,7 +31,7 @@ const Sidebar = ({ children }) => {
                   className={
                     resolvedTheme === 'light' ?
                       "pointer-events-none absolute -top-2 left-8 w-max bg-slate-300 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
-                      : "pointer-events-none absolute -top-2 left-8 w-max text-white bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
+                      : "pointer-events-none absolute -top-2 left-8 w-max text-slate-50 bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
                   }
                 >
                   Home
@@ -53,7 +53,7 @@ const Sidebar = ({ children }) => {
                   className={
                     resolvedTheme === 'light' ?
                       "pointer-events-none absolute -top-2 left-8 w-max bg-slate-300 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
-                      : "pointer-events-none absolute -top-2 left-8 w-max text-white bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
+                      : "pointer-events-none absolute -top-2 left-8 w-max text-slate-50 bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
                   }
                 >
                   Dashboard
@@ -69,7 +69,7 @@ const Sidebar = ({ children }) => {
                   className={
                     resolvedTheme === 'light' ?
                       "pointer-events-none absolute -top-2 left-8 w-max bg-slate-300 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
-                      : "pointer-events-none absolute -top-2 left-8 w-max text-white bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
+                      : "pointer-events-none absolute -top-2 left-8 w-max text-slate-50 bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
                   }
                 >
                   Orders
@@ -85,7 +85,7 @@ const Sidebar = ({ children }) => {
                   className={
                     resolvedTheme === 'light' ?
                       "pointer-events-none absolute -top-2 left-8 w-max bg-slate-300 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
-                      : "pointer-events-none absolute -top-2 left-8 w-max text-white bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
+                      : "pointer-events-none absolute -top-2 left-8 w-max text-slate-50 bg-slate-700 py-2 px-4 rounded-xl opacity-0 transition-opacity group-hover:opacity-100"
                   }
                 >
                   Reset
